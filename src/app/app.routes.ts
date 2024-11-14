@@ -1,3 +1,9 @@
 import { Routes } from '@angular/router';
 
-export const routes: Routes = [];
+import { LandingPageComponent } from './landing-page/components/landing-page/landing-page.component';
+
+
+ export const routes: Routes = [
+  {path: 'face-snap', loadChildren: ()=> import('./face-snaps/face-snaps.module').then(m => m.FaceSnapsModule)},
+  { path: '', component: LandingPageComponent }
+  ];
