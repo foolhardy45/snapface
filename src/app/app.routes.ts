@@ -4,6 +4,6 @@ import { LandingPageComponent } from './landing-page/components/landing-page/lan
 
 
  export const routes: Routes = [
-  {path: 'face-snap', loadChildren: ()=> import('./face-snaps/face-snaps.module').then(m => m.FaceSnapsModule)},
+  {path: 'facesnaps', loadChildren: ()=> import('./face-snaps/face-snaps.module').then(m => m.FaceSnapsModule)},
   { path: '', component: LandingPageComponent }
   ];

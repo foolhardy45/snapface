@@ -7,7 +7,7 @@ import { UpperCasePipe } from '@angular/common';
   selector: 'app-face-snap',
   standalone: true,
   imports: [UpperCasePipe,
-    RouterLink
+    RouterLink,
   ],
   templateUrl: './face-snap.component.html',
   styleUrl: './face-snap.component.scss'

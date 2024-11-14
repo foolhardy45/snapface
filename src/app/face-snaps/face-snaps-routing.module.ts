@@ -5,9 +5,10 @@ import { SingleFaceSnapComponent } from "./components/single-face-snap/single-fa
 import { NewFaceSnapComponent } from "./components/new-face-snap/new-face-snap.component";
 
 const routes: Routes = [
+    {path: 'create', component: NewFaceSnapComponent},
     { path: ':id', component: SingleFaceSnapComponent },
     { path: '', component: FaceSnapListComponent },
-    {path: 'create', component: NewFaceSnapComponent},
+    
 
 ];
 
